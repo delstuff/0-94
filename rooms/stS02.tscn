@@ -1,0 +1,178 @@
+[gd_scene load_steps=11 format=1]
+
+[ext_resource path="res://rooms/parts/roomCol.scn" type="PackedScene" id=1]
+[ext_resource path="res://rooms/parts/wall.scn" type="PackedScene" id=2]
+[ext_resource path="res://rooms/parts/pipe.scn" type="PackedScene" id=3]
+[ext_resource path="res://rooms/parts/flora.scn" type="PackedScene" id=4]
+[ext_resource path="res://rooms/parts/floraB.scn" type="PackedScene" id=5]
+[ext_resource path="res://rooms/parts/wallRound.scn" type="PackedScene" id=6]
+[ext_resource path="res://scene/builderN.scn" type="PackedScene" id=7]
+[ext_resource path="res://scene/startPos.scn" type="PackedScene" id=8]
+[ext_resource path="res://scene/foeSpawn.scn" type="PackedScene" id=9]
+[ext_resource path="res://scene/stuff/egg.scn" type="PackedScene" id=10]
+
+[node name="stRoom" type="Node2D"]
+
+[node name="roomCol" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( -8, 552 )
+
+[node name="geo" type="Node2D" parent="."]
+
+transform/pos = Vector2( 0, 1800 )
+transform/rot = 180.0
+
+[node name="wall" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -308, 2422 )
+
+[node name="pipe" parent="geo" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( -200.628, 1469.37 )
+transform/rot = -15.4591
+
+[node name="pipe1" parent="geo" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( -585.067, 2224.93 )
+transform/rot = 84.4739
+
+[node name="pipe2" parent="geo" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( -555.067, 1954.93 )
+transform/rot = 84.4739
+
+[node name="wall1" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 412, 2422 )
+transform/rot = 14.2207
+
+[node name="wall2" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 993.771, 2053.77 )
+transform/rot = -120.288
+
+[node name="wall3" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -256.049, 1663.95 )
+transform/rot = -148.787
+
+[node name="wall4" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 657.79, 881.178 )
+transform/rot = -211.013
+
+[node name="wall5" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -838.093, 751.907 )
+transform/rot = -112.824
+
+[node name="wall6" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -668.188, 1261.81 )
+transform/rot = -22.5071
+
+[node name="wall7" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 411.812, 131.812 )
+transform/rot = -22.5071
+
+[node name="wall8" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 445.214, 555.214 )
+transform/rot = 47.445
+
+[node name="wall9" parent="geo" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -385.034, 184.966 )
+transform/rot = 38.5228
+
+[node name="flora" parent="geo" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -28.7441, 1555.31 )
+transform/rot = -148.865
+
+[node name="flora2" parent="geo" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 525.378, 874.64 )
+transform/rot = 163.493
+
+[node name="flora3" parent="geo" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 826.389, 947.367 )
+transform/rot = 151.059
+
+[node name="flora4" parent="geo" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -506.416, 322.719 )
+transform/rot = -137.674
+
+[node name="flora5" parent="geo" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -823.751, 883.9 )
+transform/rot = -98.1711
+
+[node name="flora6" parent="geo" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -112.286, 2412.34 )
+transform/rot = -15.361
+
+[node name="floraB" parent="geo" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( -375.078, 1779.13 )
+transform/rot = 180.0
+
+[node name="wallRound" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 166.97, 1561.78 )
+
+[node name="wallRound1" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 447.784, 1554.19 )
+transform/rot = 164.128
+
+[node name="wallRound2" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 569.216, 1751.52 )
+transform/rot = 78.3362
+
+[node name="wallRound3" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 428.81, 1983 )
+transform/rot = -120.813
+
+[node name="floraB1" parent="geo" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 368.698, 2120.66 )
+transform/rot = 180.0
+
+[node name="wallRound4" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 1043.56, 1637.68 )
+transform/rot = -223.389
+
+[node name="wallRound5" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 831.056, 1470.71 )
+transform/rot = -55.0779
+
+[node name="wallRound6" parent="geo" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 815.877, 1220.25 )
+transform/rot = -122.099
+
+[node name="builder" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 0, 1800 )
+transform/rot = 180.0
+
+[node name="startPos" parent="." instance=ExtResource( 8 )]
+
+[node name="foeSpawn" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 0, 1500 )
+
+[node name="egg" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 717.213, 789.314 )
+
+

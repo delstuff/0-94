@@ -1,13 +1,68 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=10 format=1]
 
-[ext_resource path="res://rooms/parts/wall.scn" type="PackedScene" id=1]
-[ext_resource path="res://rooms/parts/pipe.scn" type="PackedScene" id=2]
-[ext_resource path="res://scene/builderN.scn" type="PackedScene" id=3]
-[ext_resource path="res://scene/startPos.scn" type="PackedScene" id=4]
-[ext_resource path="res://scene/foeSpawn.scn" type="PackedScene" id=5]
-[ext_resource path="res://rooms/parts/roomCol.scn" type="PackedScene" id=6]
+[ext_resource path="res://rooms/parts/roomCol.scn" type="PackedScene" id=1]
+[ext_resource path="res://rooms/parts/flora.scn" type="PackedScene" id=2]
+[ext_resource path="res://rooms/parts/floraB.scn" type="PackedScene" id=3]
+[ext_resource path="res://rooms/parts/wall.scn" type="PackedScene" id=4]
+[ext_resource path="res://rooms/parts/pipe.scn" type="PackedScene" id=5]
+[ext_resource path="res://scene/builderN.scn" type="PackedScene" id=6]
+[ext_resource path="res://scene/startPos.scn" type="PackedScene" id=7]
+[ext_resource path="res://scene/foeSpawn.scn" type="PackedScene" id=8]
+[ext_resource path="res://scene/stuff/egg.scn" type="PackedScene" id=9]
 
 [node name="stRoom" type="Node2D"]
+
+[node name="roomCol" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( -8, 552 )
+
+[node name="flora" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 36.744, -307.314 )
+transform/rot = 31.1353
+
+[node name="flora1" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -559.511, -374.121 )
+transform/rot = -16.5066
+
+[node name="flora2" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -255.538, 365.77 )
+transform/rot = -16.5066
+transform/scale = Vector2( 1, 1 )
+
+[node name="flora3" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -818.389, 300.633 )
+transform/rot = -28.9407
+transform/scale = Vector2( 1, 1 )
+
+[node name="flora4" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 514.416, 925.281 )
+transform/rot = 42.3264
+transform/scale = Vector2( 1, 1 )
+
+[node name="flora5" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 831.751, 364.1 )
+transform/rot = 81.8289
+transform/scale = Vector2( 1, 1 )
+
+[node name="flora6" parent="roomCol" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 120.286, -1164.34 )
+transform/rot = 164.639
+transform/scale = Vector2( 1, 1 )
+
+[node name="floraB" parent="roomCol" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 383.078, -531.127 )
+
+[node name="floraB1" parent="roomCol" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( -834.629, -460.804 )
 
 [node name="geo" type="Node2D" parent="."]
 
@@ -15,93 +70,93 @@ transform/pos = Vector2( 0, 1800 )
 transform/rot = 180.0
 __meta__ = { "_editor_collapsed":true }
 
-[node name="wall" parent="geo" instance=ExtResource( 1 )]
+[node name="wall" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -308, 2422 )
 
-[node name="pipe" parent="geo" instance=ExtResource( 2 )]
+[node name="pipe" parent="geo" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -200.628, 1469.37 )
 transform/rot = -15.4591
 
-[node name="pipe1" parent="geo" instance=ExtResource( 2 )]
+[node name="pipe1" parent="geo" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -585.067, 2224.93 )
 transform/rot = 84.4739
 
-[node name="pipe2" parent="geo" instance=ExtResource( 2 )]
+[node name="pipe2" parent="geo" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -555.067, 1954.93 )
 transform/rot = 84.4739
 
-[node name="wall1" parent="geo" instance=ExtResource( 1 )]
+[node name="wall1" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 412, 2422 )
 transform/rot = 14.2207
 
-[node name="wall2" parent="geo" instance=ExtResource( 1 )]
+[node name="wall2" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 993.771, 2053.77 )
 transform/rot = -120.288
 
-[node name="wall3" parent="geo" instance=ExtResource( 1 )]
+[node name="wall3" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -256.049, 1663.95 )
 transform/rot = -148.787
 
-[node name="wall4" parent="geo" instance=ExtResource( 1 )]
+[node name="wall4" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 543.947, 903.947 )
 transform/rot = -183.601
 
-[node name="wall5" parent="geo" instance=ExtResource( 1 )]
+[node name="wall5" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -838.093, 751.907 )
 transform/rot = -112.824
 
-[node name="wall6" parent="geo" instance=ExtResource( 1 )]
+[node name="wall6" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -668.188, 1261.81 )
 transform/rot = -22.5071
 
-[node name="wall7" parent="geo" instance=ExtResource( 1 )]
+[node name="wall7" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 411.812, 131.812 )
 transform/rot = -22.5071
 
-[node name="wall8" parent="geo" instance=ExtResource( 1 )]
+[node name="wall8" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 445.214, 555.214 )
 transform/rot = 47.445
 
-[node name="wall9" parent="geo" instance=ExtResource( 1 )]
+[node name="wall9" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -385.034, 184.966 )
 transform/rot = 38.5228
 
-[node name="wall10" parent="geo" instance=ExtResource( 1 )]
+[node name="wall10" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 753.771, 1293.77 )
 transform/rot = -120.288
 
-[node name="wall11" parent="geo" instance=ExtResource( 1 )]
+[node name="wall11" parent="geo" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 876.514, 1666.51 )
 transform/rot = -188.79
 
-[node name="builder" parent="." instance=ExtResource( 3 )]
+[node name="builder" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 0, 1800 )
 transform/rot = 180.0
 
-[node name="startPos" parent="." instance=ExtResource( 4 )]
+[node name="startPos" parent="." instance=ExtResource( 7 )]
 
-[node name="foeSpawn" parent="." instance=ExtResource( 5 )]
+[node name="foeSpawn" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 0, 1500 )
 
-[node name="roomCol" parent="." instance=ExtResource( 6 )]
+[node name="egg" parent="." instance=ExtResource( 9 )]
 
-transform/pos = Vector2( -8, 552 )
+transform/pos = Vector2( -607.164, 721.008 )
 
 

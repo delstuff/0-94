@@ -25,35 +25,25 @@ __meta__ = { "_editor_collapsed":true }
 
 transform/pos = Vector2( -308, 2422 )
 
-[node name="pipe" parent="geo" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( -200.628, 1469.37 )
-transform/rot = -15.4591
-
 [node name="pipe1" parent="geo" instance=ExtResource( 3 )]
 
-transform/pos = Vector2( -585.067, 2224.93 )
-transform/rot = 84.4739
-
-[node name="pipe2" parent="geo" instance=ExtResource( 3 )]
-
-transform/pos = Vector2( -555.067, 1954.93 )
-transform/rot = 84.4739
+transform/pos = Vector2( -663.837, 2190.68 )
+transform/rot = 99.5729
 
 [node name="wall1" parent="geo" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 412, 2422 )
-transform/rot = 14.2207
+transform/pos = Vector2( 407.795, 2388.36 )
+transform/rot = 19.1753
 
 [node name="wall2" parent="geo" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 993.771, 2053.77 )
-transform/rot = -120.288
+transform/pos = Vector2( 909.676, 1961.27 )
+transform/rot = -107.333
 
 [node name="wall3" parent="geo" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -256.049, 1663.95 )
-transform/rot = -148.787
+transform/pos = Vector2( -530.032, 1718.75 )
+transform/rot = -115.678
 
 [node name="wall4" parent="geo" instance=ExtResource( 2 )]
 
@@ -85,15 +75,10 @@ transform/rot = 47.445
 transform/pos = Vector2( -385.034, 184.966 )
 transform/rot = 38.5228
 
-[node name="wall10" parent="geo" instance=ExtResource( 2 )]
-
-transform/pos = Vector2( 753.771, 1293.77 )
-transform/rot = -120.288
-
 [node name="wall11" parent="geo" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 876.514, 1666.51 )
-transform/rot = -188.79
+transform/pos = Vector2( 952.199, 1288.08 )
+transform/rot = -253.926
 
 [node name="floraB" parent="geo" instance=ExtResource( 4 )]
 
@@ -109,7 +94,7 @@ transform/pos = Vector2( 194, 814 )
 
 [node name="floraB3" parent="geo" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 514, 1604 )
+transform/pos = Vector2( 989.135, 1633.43 )
 
 [node name="flora" parent="geo" instance=ExtResource( 5 )]
 
@@ -123,13 +108,13 @@ transform/rot = -178.655
 
 [node name="flora2" parent="geo" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 531.149, 2341.15 )
+transform/pos = Vector2( 518.535, 2299.1 )
 transform/rot = -339.594
 
 [node name="flora3" parent="geo" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 711.15, 1251.15 )
-transform/rot = -302.808
+transform/pos = Vector2( 862.521, 1192.28 )
+transform/rot = -256.305
 
 [node name="builder" parent="." instance=ExtResource( 6 )]
 
