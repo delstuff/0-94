@@ -212,7 +212,7 @@ func _fixed_process(delta):
 			returnReady = true
 
 		if blastReady == false:
-			if SHOOT.check() == 1 and returnReady == true:
+			if THRUST.check() == 1 and returnReady == true:
 				get_tree().change_scene("res://scene/title.scn")
 				get_node("/root/global").loadingReady = false
 				get_node("/root/global").roomCount = 0
@@ -220,6 +220,14 @@ func _fixed_process(delta):
 					var foes = get_tree().get_nodes_in_group("foe")
 					for i in foes:
 						i.queue_free()
+			if SHOOT.check() == 1 and returnReady == true:
+				get_node("/root/global").loadingReady = false
+				get_node("/root/global").roomCount = 0
+				if get_tree().has_group("foe"):
+					var foes = get_tree().get_nodes_in_group("foe")
+					for i in foes:
+						i.queue_free()
+				get_tree().reload_current_scene()
 			
 			
 			
